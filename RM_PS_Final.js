@@ -16,3 +16,14 @@ var multiply = function(a, b) {
  };
  console.log(multiply(4,5));
  
+
+//  03. Even or Odd
+
+var evenOrOdd = function(number) {
+ 	if(number % 2 === 0){
+        return "Even";
+    }else{
+        return "Odd";
+    }
+ };
+console.log(evenOrOdd(7));
