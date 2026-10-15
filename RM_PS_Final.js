@@ -39,55 +39,66 @@ console.log(makeNegative(8));
 
 // 05. Opposite Number
 
-var opposite = function(number) {
- 	return -number;
- };
- console.log(opposite(-7));
+var opposite = function (number) {
+  return -number;
+};
+console.log(opposite(-7));
 
 //  06. Simple Array Sum
 
-var simpleArraySum = function(ar) {
- 	let sum = 0;
-   for(let i =0 ; i< ar.length; i++){
-    sum = sum + ar[i]
-   }
-   return sum;
- };
- console.log(simpleArraySum([1,2,3,4]));
+var simpleArraySum = function (ar) {
+  let sum = 0;
+  for (let i = 0; i < ar.length; i++) {
+    sum = sum + ar[i];
+  }
+  return sum;
+};
+console.log(simpleArraySum([1, 2, 3, 4]));
 
 //  07. sleepIn
 
-var sleepIn = function(weekday, vacation) {
- 	return !weekday || vacation;
- };
- console.log(sleepIn(true, false)); // it return false
- console.log(sleepIn(true, true)); // it return true
- console.log(sleepIn(true, false)); // it return true
+var sleepIn = function (weekday, vacation) {
+  return !weekday || vacation;
+};
+console.log(sleepIn(true, false)); // it return false
+console.log(sleepIn(true, true)); // it return true
+console.log(sleepIn(true, false)); // it return true
 
 //  08. monkeyTrouble
 
-var monkeyTrouble = function(aSmile, bSmile) {
- 	if(aSmile === bSmile){
-        return true
-    }else{
-        return false
-    }
- };
+var monkeyTrouble = function (aSmile, bSmile) {
+  if (aSmile === bSmile) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
- console.log(monkeyTrouble(true, true));
- console.log(monkeyTrouble(false, false));
- console.log(monkeyTrouble(true, false));
- console.log(monkeyTrouble(false, true));
+console.log(monkeyTrouble(true, true));
+console.log(monkeyTrouble(false, false));
+console.log(monkeyTrouble(true, false));
+console.log(monkeyTrouble(false, true));
 
 //  09. sumDouble
 
-var sumDouble = function(a, b) {
-    let sum = a + b;
- 	if(a===b){
-        return sum * 2
-    }else{
-        return sum
-    }
- };
+var sumDouble = function (a, b) {
+  let sum = a + b;
+  if (a === b) {
+    return sum * 2;
+  } else {
+    return sum;
+  }
+};
 
- console.log(sumDouble(3,3));
+console.log(sumDouble(3, 3));
+
+//  10. diff21
+
+var diff21 = function (n) {
+  if (n > 21) {
+    return (n - 21) * 2;
+  } else {
+    return n - 21;
+  }
+};
+console.log(diff21(25));
