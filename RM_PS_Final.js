@@ -78,3 +78,16 @@ var monkeyTrouble = function(aSmile, bSmile) {
  console.log(monkeyTrouble(false, false));
  console.log(monkeyTrouble(true, false));
  console.log(monkeyTrouble(false, true));
+
+//  09. sumDouble
+
+var sumDouble = function(a, b) {
+    let sum = a + b;
+ 	if(a===b){
+        return sum * 2
+    }else{
+        return sum
+    }
+ };
+
+ console.log(sumDouble(3,3));
