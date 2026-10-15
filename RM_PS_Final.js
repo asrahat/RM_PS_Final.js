@@ -36,3 +36,10 @@ var makeNegative = function (number) {
   }
 };
 console.log(makeNegative(8));
+
+// 05. Opposite Number
+
+var opposite = function(number) {
+ 	return -number;
+ };
+ console.log(opposite(-7));
