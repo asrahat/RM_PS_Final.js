@@ -54,3 +54,12 @@ var simpleArraySum = function(ar) {
    return sum;
  };
  console.log(simpleArraySum([1,2,3,4]));
+
+//  07. sleepIn
+
+var sleepIn = function(weekday, vacation) {
+ 	return !weekday || vacation;
+ };
+ console.log(sleepIn(true, false)); // it return false
+ console.log(sleepIn(true, true)); // it return true
+ console.log(sleepIn(true, false)); // it return true
