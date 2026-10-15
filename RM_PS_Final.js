@@ -63,3 +63,18 @@ var sleepIn = function(weekday, vacation) {
  console.log(sleepIn(true, false)); // it return false
  console.log(sleepIn(true, true)); // it return true
  console.log(sleepIn(true, false)); // it return true
+
+//  08. monkeyTrouble
+
+var monkeyTrouble = function(aSmile, bSmile) {
+ 	if(aSmile === bSmile){
+        return true
+    }else{
+        return false
+    }
+ };
+
+ console.log(monkeyTrouble(true, true));
+ console.log(monkeyTrouble(false, false));
+ console.log(monkeyTrouble(true, false));
+ console.log(monkeyTrouble(false, true));
