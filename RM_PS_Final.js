@@ -276,3 +276,11 @@ var summation = function(num) {
 
   return sum;
 };
+
+// 25. Convert a Boolean to a String: Convert a boolean value into the string "true" or "false".
+
+
+var booleanToString = function(b) {
+  return String(b);
+};
+
