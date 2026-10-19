@@ -102,3 +102,13 @@ var diff21 = function (n) {
   }
 };
 console.log(diff21(25));
+
+// 11. parrotTrouble
+
+var parrotTrouble = function(talking, hour) {
+ 	 if (talking && (hour < 7 || hour > 20)) {
+        return true;
+    } else {
+        return false;
+    }
+ };
