@@ -177,3 +177,22 @@ var aVeryBigSum = function(ar) {
 
   return sum;
  };
+
+//  18. Staircase: Create a right-aligned staircase of height n using # characters.
+
+var staircase = function(n) {
+ 	 let result = "";
+
+  for (let i = 1; i <= n; i++) {
+    let spaces = " ".repeat(n - i);
+    let hashes = "#".repeat(i);
+
+    result += spaces + hashes;
+
+    if (i < n) {
+      result += "\n";
+    }
+  }
+
+  return result;
+ };
