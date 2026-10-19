@@ -248,3 +248,19 @@ var repeatStr = function(n, s) {
 var solution = function(str) {
   return str.split("").reverse().join("");
 };
+
+// 23. Sum of Positive: Return the sum of all positive numbers in an array. Return 0 if there are none.
+
+
+var positiveSum = function(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum = sum + arr[i];
+    }
+  }
+
+  return sum;
+};
+
