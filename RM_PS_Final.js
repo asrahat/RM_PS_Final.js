@@ -215,3 +215,23 @@ var gradingStudents = function(grades) {
 
   return result;
  };
+
+//  20. Time Conversion: Convert a 12-hour AM/PM time string into 24-hour format.
+
+var timeConversion = function(s) {
+  let period = s.slice(-2);
+  let time = s.slice(0, 8);
+  let hour = Number(time.slice(0, 2));
+
+  if (period === "AM") {
+    if (hour === 12) {
+      hour = 0;
+    }
+  } else {
+    if (hour !== 12) {
+      hour = hour + 12;
+    }
+  }
+
+  return String(hour).padStart(2, "0") + time.slice(2);
+};
