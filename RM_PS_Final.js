@@ -128,3 +128,13 @@ var nearHundred = function(n) {
  	 return (Math.abs(n - 100) <= 10 ||
             Math.abs(n - 200) <= 10);
  };
+
+//  14. posNeg: Return true when one number is positive and the other is negative. If negative is true, both must be negative.
+
+var posNeg = function(a, b, negative) {
+ 	  if (negative) {
+    return a < 0 && b < 0;
+  } else {
+    return (a < 0 && b > 0) || (a > 0 && b < 0);
+  }
+ };
