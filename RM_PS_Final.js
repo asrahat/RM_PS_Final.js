@@ -241,3 +241,10 @@ var timeConversion = function(s) {
 var repeatStr = function(n, s) {
   return s.repeat(n);
 };
+
+// 22. Reversed Strings: Return the given string with its characters in reverse order.
+
+
+var solution = function(str) {
+  return str.split("").reverse().join("");
+};
