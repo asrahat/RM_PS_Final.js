@@ -235,3 +235,9 @@ var timeConversion = function(s) {
 
   return String(hour).padStart(2, "0") + time.slice(2);
 };
+
+// 21. String Repeat: Return a string repeated exactly n times.
+
+var repeatStr = function(n, s) {
+  return s.repeat(n);
+};
