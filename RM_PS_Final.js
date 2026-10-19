@@ -148,3 +148,20 @@ var notString = function(str) {
     return "not " + str;
   }
  };
+
+//  16. Compare the Triplets: Compare two three-element score arrays and return how many points each person earns.
+
+var compareTriplets = function(a, b) {
+ 	  let aPoints = 0;
+  let bPoints = 0;
+
+  for (let i = 0; i < 3; i++) {
+    if (a[i] > b[i]) {
+      aPoints++;
+    } else if (a[i] < b[i]) {
+      bPoints++;
+    }
+  }
+
+  return [aPoints, bPoints];
+ };
