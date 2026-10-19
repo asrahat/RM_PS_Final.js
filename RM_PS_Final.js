@@ -196,3 +196,22 @@ var staircase = function(n) {
 
   return result;
  };
+
+//  19. Grading Students: Round a grade up to the next multiple of 5 when it is close enough; keep grades below 38 unchanged.
+
+var gradingStudents = function(grades) {
+ 	let result = [];
+
+  for (let i = 0; i < grades.length; i++) {
+    let grade = grades[i];
+    let nextMultiple = Math.ceil(grade / 5) * 5;
+
+    if (grade >= 38 && nextMultiple - grade < 3) {
+      grade = nextMultiple;
+    }
+
+    result.push(grade);
+  }
+
+  return result;
+ };
