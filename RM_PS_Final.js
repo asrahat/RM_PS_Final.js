@@ -122,3 +122,9 @@ var makes10 = function(a, b) {
         return false;
     }
  };
+
+//  13. nearHundred
+var nearHundred = function(n) {
+ 	 return (Math.abs(n - 100) <= 10 ||
+            Math.abs(n - 200) <= 10);
+ };
