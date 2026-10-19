@@ -165,3 +165,15 @@ var compareTriplets = function(a, b) {
 
   return [aPoints, bPoints];
  };
+
+//  17. A Very Big Sum: Return the sum of all values in an integer array.
+
+var aVeryBigSum = function(ar) {
+ 	let sum = 0;
+
+  for (let i = 0; i < ar.length; i++) {
+    sum = sum + ar[i];
+  }
+
+  return sum;
+ };
