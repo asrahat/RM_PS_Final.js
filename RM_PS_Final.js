@@ -264,3 +264,15 @@ var positiveSum = function(arr) {
   return sum;
 };
 
+// 24. Grasshopper - Summation: Return the sum of all integers from 1 through n.
+
+
+var summation = function(num) {
+  let sum = 0;
+
+  for (let i = 1; i <= num; i++) {
+    sum = sum + i;
+  }
+
+  return sum;
+};
